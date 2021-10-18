@@ -1,0 +1,30 @@
+[package]
+name = "triangle"
+version = "0.2.0"
+authors = ["guotie <guotie.9@gmail.com>"]
+edition = "2018"
+description = "Tri-Angle Arbitrage trading bot for Binance"
+homepage = "https://github.com/guotie/triangle-rs"
+repository = "https://github.com/guotie/triangle-rs"
+license="GPL-3.0"
+keywords=["bot", "algotrading", "cryptocurrencies", "binance", "arbitrage", "triangle"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+binance = "0.17.0"
+serde = { version = "1.0" }
+serde_json = { version = "1.0" }
+rayon = "1.5"
+indicatif = "0.15"
+console = "0.13"
+telegram-bot = "0.8"
+futures="0.3"
+tokio = { version = "0.2.23", features = ["macros", "io-util"] }
+string-join = "0.1.2"
+time = "0.3.3"
+chrono = "0.4"
+
+[lib]
+name = "triangle"
+path = "src/lib.rs"
